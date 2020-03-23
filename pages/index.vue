@@ -10,16 +10,27 @@
         <div class="links">
           <button
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-          >Button</button>
-          <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+          >
+            Button
+          </button>
+          <a href="https://nuxtjs.org/" target="_blank" class="button--green"
+            >Documentation</a
+          >
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            class="button--grey"
+            >GitHub</a
+          >
         </div>
       </div>
     </div>
     <div class="mx-auto px-2 bg-indigo-300 h-64">
       <button
         class="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-extrabold py-2 px-4 rounded-full"
-      >hello world</button>
+      >
+        hello world
+      </button>
       <div
         class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-5"
         role="alert"
@@ -28,24 +39,32 @@
         <span class="block sm:inline">Please update your password</span>
       </div>
 
-      <div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl"></div>
+      <div
+        class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl"
+      ></div>
     </div>
+    <button
+      :class="[]"
+      class="bg-blue-500 text-white font-bold py-2 px-4 border border-blue-700 rounded inline-flex items-center hover:bg-blue-600"
+    >
+      TESTING
+    </button>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from "~/components/Logo.vue";
 
 export default {
-  data() {
-    return {
-      message: 'helloworld wtf bbq sauce'
-    }
-  },
   components: {
     Logo
+  },
+  data() {
+    return {
+      message: "helloworld wtf bbq sauce"
+    };
   }
-}
+};
 </script>
 
 <style>
@@ -64,8 +83,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;

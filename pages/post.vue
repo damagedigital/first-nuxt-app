@@ -9,22 +9,23 @@
 export default {
   data() {
     return {
-      message: 'helloworld wtf bbq sauce'
-    }
+      message: "helloworld wtf bbq sauce"
+    };
   },
   computed: {
-    reversedMessage: function() {
-      var abc = 1
-      abc = abc + 1
+    reversedMessage() {
+      let abc = 1;
+      abc = abc + 1;
 
-      return this.message
-        .split('')
-        .reverse()
-        .join('')
+      return (
+        this.message
+          .split("")
+          .reverse()
+          .join("") + abc
+      );
     }
   }
-}
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
